@@ -7,6 +7,9 @@ package debo;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import user.module.dao.UserDAO;
 
 
 /**
@@ -26,6 +29,7 @@ public class DBConnection {
             connexion = DriverManager.getConnection(url, user, password);
         } catch (SQLException ex) {
             System.out.println("Probleme de connexion");
+            Logger.getLogger(DBConnection.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 

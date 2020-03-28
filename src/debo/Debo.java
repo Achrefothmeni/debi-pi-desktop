@@ -5,6 +5,7 @@
  */
 package debo;
 
+import java.sql.Connection;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -12,6 +13,8 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
+import user.module.dao.UserDAO;
+import user.module.model.User;
 
 /**
  *
@@ -27,7 +30,11 @@ public class Debo extends Application {
             
             @Override
             public void handle(ActionEvent event) {
+                Connection connection = DBConnection.getInstance().getConnexion();
                 System.out.println("Hello World!");
+                User user = new User("testjava", "testjava", "tt@e.e", "tt@e.e", "azaz", "a:1:{i:0;s:16:"+'"'+"ROLE_SUPER_ADMIN"+'"'+";}", "az", "az", "Disponible", "sdsd", 123323);
+                UserDAO userDAO = new UserDAO();
+                userDAO.save(user);
             }
         });
         
