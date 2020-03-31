@@ -45,7 +45,6 @@ public class UserDAO {
         } catch (SQLException ex) {
             System.err.println(ex.getMessage());
         }
-        
         }
     
     public void update(User user){
