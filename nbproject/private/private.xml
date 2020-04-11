@@ -3,8 +3,20 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/dell/Documents/NetBeansProjects/Debo/src/user/module/dao/UserDAO.java</file>
+            <file>file:/C:/Users/dell/Documents/NetBeansProjects/Debo/src/dashboard/DashboardHomeController.java</file>
+            <file>file:/C:/Users/dell/Documents/NetBeansProjects/Debo/src/user/module/UserLoginController.java</file>
+            <file>file:/C:/Users/dell/Documents/NetBeansProjects/Debo/src/user/module/EditProfileController.java</file>
+            <file>file:/C:/Users/dell/Documents/NetBeansProjects/Debo/src/user/module/add_user.fxml</file>
             <file>file:/C:/Users/dell/Documents/NetBeansProjects/Debo/src/debo/Debo.java</file>
+            <file>file:/C:/Users/dell/Documents/NetBeansProjects/Debo/src/dashboard/dashboard_home.fxml</file>
+            <file>file:/C:/Users/dell/Documents/NetBeansProjects/Debo/src/user/module/AddUserController.java</file>
+            <file>file:/C:/Users/dell/Documents/NetBeansProjects/Debo/src/user/module/users_list.fxml</file>
+            <file>file:/C:/Users/dell/Documents/NetBeansProjects/Debo/src/user/module/UsersListController.java</file>
+            <file>file:/C:/Users/dell/Documents/NetBeansProjects/Debo/src/debo/Authentication.java</file>
+            <file>file:/C:/Users/dell/Documents/NetBeansProjects/Debo/src/user/module/change_password.fxml</file>
+            <file>file:/C:/Users/dell/Documents/NetBeansProjects/Debo/src/user/module/UserMain.java</file>
+            <file>file:/C:/Users/dell/Documents/NetBeansProjects/Debo/src/user/module/edit_profile.fxml</file>
+            <file>file:/C:/Users/dell/Documents/NetBeansProjects/Debo/src/user/module/ChangePasswordController.java</file>
         </group>
     </open-files>
 </project-private>
