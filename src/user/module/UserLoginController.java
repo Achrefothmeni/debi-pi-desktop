@@ -56,6 +56,7 @@ public class UserLoginController implements Initializable {
                     Scene hoomescene = new Scene(home);
                     Stage app_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
                     app_stage.setScene(hoomescene);
+                    //app_stage.setMaximized(true);
                     app_stage.show();
                 } catch (IOException ex) {
                     Logger.getLogger(UserLoginController.class.getName()).log(Level.SEVERE, null, ex);

@@ -13,6 +13,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -26,6 +27,7 @@ import javafx.scene.Scene;
 import javafx.scene.chart.BarChart;
 import javafx.scene.chart.CategoryAxis;
 import javafx.scene.chart.NumberAxis;
+import javafx.scene.chart.PieChart;
 import javafx.scene.chart.XYChart;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.text.Text;
@@ -50,12 +52,18 @@ public class DashboardHomeController implements Initializable {
     private Text nbLivText;
     @FXML
     private BarChart<?, ?> barChart;
+    @FXML
+    private PieChart pieChart;
 
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+        ArrayList<String> names = new ArrayList();
+        ArrayList<Integer> occ = new ArrayList();
+        ArrayList<String> names2 = new ArrayList();
+        ArrayList<Integer> occ2 = new ArrayList();
         Connection connection = DBConnection.getInstance().getConnexion();
         username.setText(Authentication.authenticatedUser.getUsername());
         String query = "SELECT COUNT(*) FROM fos_user";
@@ -81,6 +89,24 @@ public class DashboardHomeController implements Initializable {
             while ( rs.next() ){
                 nbLivText.setText(String.valueOf(rs.getInt(1))+" livraisons");
             }
+            query = "SELECT COUNT(*) AS `occ`, `article`.`name` FROM `lignecommande`, `article` WHERE `lignecommande`.`id_produit`=`article`.`id_article`  GROUP BY id_produit order by `occ` desc limit 3";
+            preparedStmt = connection.prepareStatement(query);
+            preparedStmt.executeQuery();
+            rs = preparedStmt.executeQuery();
+            
+            while ( rs.next() ){
+                names.add(rs.getString("name"));
+                occ.add(rs.getInt("occ"));
+            }
+            query = "SELECT COUNT(*) AS `occ`, `category`.`label` FROM `article`, `category` WHERE `article`.`id_category` = `category`.`id_category` GROUP BY `article`.`id_category`";
+            preparedStmt = connection.prepareStatement(query);
+            preparedStmt.executeQuery();
+            rs = preparedStmt.executeQuery();
+            
+            while ( rs.next() ){
+                names2.add(rs.getString("label"));
+                occ2.add(rs.getInt("occ"));
+            }
         } catch (SQLException ex) {
             System.err.println(ex.getMessage());
         }
@@ -88,11 +114,15 @@ public class DashboardHomeController implements Initializable {
         XYChart.Series dataSeries1 = new XYChart.Series();
         dataSeries1.setName("Article");
         
-        dataSeries1.getData().add(new XYChart.Data("Desktop", 567));
-        dataSeries1.getData().add(new XYChart.Data("Phone"  , 65));
-        dataSeries1.getData().add(new XYChart.Data("Tablet"  , 23));
+        dataSeries1.getData().add(new XYChart.Data(names.get(0), occ.get(0)));
+        dataSeries1.getData().add(new XYChart.Data(names.get(1), occ.get(1)));
+        dataSeries1.getData().add(new XYChart.Data(names.get(2), occ.get(2)));
         
          barChart.getData().add(dataSeries1);
+         
+         for (int i=0 ;i<names2.size();i++){
+             pieChart.getData().add(new PieChart.Data(names2.get(i), occ2.get(i)));
+         }
          
     }    
 

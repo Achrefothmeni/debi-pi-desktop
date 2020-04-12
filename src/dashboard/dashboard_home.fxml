@@ -4,6 +4,7 @@
 <?import javafx.scene.chart.BarChart?>
 <?import javafx.scene.chart.CategoryAxis?>
 <?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
@@ -176,7 +177,7 @@
                         <Font name="Calibri" size="36.0" />
                      </font>
                   </Text>
-                  <HBox alignment="CENTER_RIGHT" layoutX="573.0" layoutY="22.0" prefHeight="70.0" prefWidth="371.0" AnchorPane.rightAnchor="14.0">
+                  <HBox alignment="CENTER_RIGHT" layoutX="592.0" layoutY="22.0" prefHeight="70.0" prefWidth="371.0" AnchorPane.rightAnchor="26.0">
                      <children>
                         <ImageView fitHeight="36.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -216,7 +217,7 @@
                   </Text>
                </children>
             </HBox>
-            <HBox alignment="CENTER" layoutX="337.0" layoutY="127.0" prefHeight="112.0" prefWidth="276.0" style="-fx-background-color: #e3e3e3; -fx-background-radius: 13;">
+            <HBox alignment="CENTER" layoutX="341.0" layoutY="127.0" prefHeight="112.0" prefWidth="276.0" style="-fx-background-color: #e3e3e3; -fx-background-radius: 13;">
                <children>
                   <ImageView fitHeight="50.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -233,7 +234,7 @@
                   </Text>
                </children>
             </HBox>
-            <HBox alignment="CENTER" layoutX="651.0" layoutY="127.0" prefHeight="112.0" prefWidth="276.0" style="-fx-background-color: #e3e3e3; -fx-background-radius: 13;">
+            <HBox alignment="CENTER" layoutX="664.0" layoutY="127.0" prefHeight="112.0" prefWidth="276.0" style="-fx-background-color: #e3e3e3; -fx-background-radius: 13;">
                <children>
                   <ImageView fitHeight="50.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -250,7 +251,7 @@
                   </Text>
                </children>
             </HBox>
-            <BarChart fx:id="barChart" layoutX="14.0" layoutY="291.0" title="Nombre de vente par produit (TOP 3)">
+            <BarChart fx:id="barChart" layoutX="14.0" layoutY="291.0" prefHeight="400.0" prefWidth="452.0" title="Nombre de vente par produit (TOP 3)" AnchorPane.bottomAnchor="29.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="291.0">
               <xAxis>
                 <CategoryAxis side="BOTTOM" />
               </xAxis>
@@ -258,6 +259,7 @@
                 <NumberAxis side="LEFT" />
               </yAxis>
             </BarChart>
+            <PieChart fx:id="pieChart" layoutX="495.0" layoutY="302.0" prefHeight="367.0" prefWidth="445.0" AnchorPane.bottomAnchor="51.0" AnchorPane.leftAnchor="495.0" AnchorPane.rightAnchor="17.0" AnchorPane.topAnchor="302.0" />
          </children>
       </AnchorPane>
    </center>
