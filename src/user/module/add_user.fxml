@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.module.AddUserController">
+    <left>
+      <AnchorPane focusTraversable="true" prefHeight="720.0" prefWidth="323.0" style="-fx-background-color: #65d2e6;" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER" layoutX="13.0" layoutY="7.0" prefHeight="707.0" prefWidth="200.0" AnchorPane.bottomAnchor="6.0" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="7.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" onMouseClicked="#redirectDashboard" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="25.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../assets/home.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label alignment="CENTER" text="Tableau de bord" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Louis George Café" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="25.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../assets/box.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label alignment="CENTER" text="Gestion articles" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Louis George Café" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="25.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../assets/newspaper.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label alignment="CENTER" text="Gestion reclamations" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Louis George Café" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="25.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../assets/shopping-bag.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label alignment="CENTER" text="Gestion commandes" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Louis George Café" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="25.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../assets/speed.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label alignment="CENTER" text="Gestion livraisons" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Louis George Café" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="25.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../assets/warehouse.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label alignment="CENTER" text="Gestion resources" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Louis George Café" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" onMouseClicked="#redirectUser" onMouseEntered="#hover" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="25.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../assets/group.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label alignment="CENTER" text="Gestion utilisateurs" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Louis George Café" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #f7f7f7;" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="114.0" prefWidth="958.0" style="-fx-background-color: #ebebeb;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <Text fill="#464646" layoutX="69.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ajouter un utilisateurs">
+                     <font>
+                        <Font name="Calibri" size="36.0" />
+                     </font>
+                  </Text>
+                  <HBox alignment="CENTER_RIGHT" layoutX="562.0" layoutY="24.0" prefHeight="70.0" prefWidth="371.0" AnchorPane.rightAnchor="24.0">
+                     <children>
+                        <ImageView fitHeight="40.0" fitWidth="35.0" onMouseClicked="#modiferProfileRedirect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../assets/settings.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="30.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fitHeight="36.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../assets/user.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="15.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Text fx:id="usernameText" fill="#363636" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="71.0">
+                           <font>
+                              <Font name="Louis George Café Bold" size="20.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="20.0" />
+                           </HBox.margin>
+                        </Text>
+                        <Button mnemonicParsing="false" onAction="#logout" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #f74a56;" text="Logout" textFill="WHITE" />
+                     </children>
+                  </HBox>
+                  <ImageView fitHeight="36.0" fitWidth="68.0" layoutX="20.0" layoutY="38.0" onMouseClicked="#retourner" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../assets/return.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <TextField fx:id="username" layoutX="40.0" layoutY="175.0" prefHeight="40.0" prefWidth="400.0" promptText="nom d'utilisateur" />
+            <TextField fx:id="email" layoutX="520.0" layoutY="175.0" prefHeight="40.0" prefWidth="400.0" promptText="email" />
+            <PasswordField fx:id="password" layoutX="40.0" layoutY="495.0" prefHeight="40.0" prefWidth="207.0" promptText="mot de passe" />
+            <TextField fx:id="nom" layoutX="40.0" layoutY="283.0" prefHeight="40.0" prefWidth="400.0" promptText="nom" />
+            <TextField fx:id="prenom" layoutX="520.0" layoutY="283.0" prefHeight="40.0" prefWidth="400.0" promptText="prenom" />
+            <TextField fx:id="numTel" layoutX="40.0" layoutY="386.0" onKeyPressed="#validateNumTel" prefHeight="40.0" prefWidth="400.0" promptText="numéro de téléphone" />
+            <TextField fx:id="matFiscal" layoutX="720.0" layoutY="386.0" prefHeight="40.0" prefWidth="200.0" promptText="matricule fiscal" />
+            <Button fx:id="generatePwd" layoutX="259.0" layoutY="495.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="181.0" text="Générer mot de passe" />
+            <Button fx:id="addUserBtn" layoutX="420.0" layoutY="605.0" mnemonicParsing="false" onAction="#addUser" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #38cf62;" text="Ajouter" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <ComboBox fx:id="role" layoutX="520.0" layoutY="386.0" onAction="#checkUserRole" prefHeight="40.0" prefWidth="180.0" promptText="Choisir role" />
+            <Text fill="#434343" layoutX="40.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom d'utilisateur">
+               <font>
+                  <Font name="Louis George Café" size="20.0" />
+               </font>
+            </Text>
+            <Text fill="#434343" layoutX="42.0" layoutY="273.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom ">
+               <font>
+                  <Font name="Louis George Café" size="20.0" />
+               </font>
+            </Text>
+            <Text fill="#434343" layoutX="522.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email">
+               <font>
+                  <Font name="Louis George Café" size="20.0" />
+               </font>
+            </Text>
+            <Text fill="#434343" layoutX="522.0" layoutY="273.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prenom">
+               <font>
+                  <Font name="Louis George Café" size="20.0" />
+               </font>
+            </Text>
+            <Text fill="#434343" layoutX="42.0" layoutY="373.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Numéro de téléphone">
+               <font>
+                  <Font name="Louis George Café" size="20.0" />
+               </font>
+            </Text>
+            <Text fill="#434343" layoutX="42.0" layoutY="483.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mot de passe">
+               <font>
+                  <Font name="Louis George Café" size="20.0" />
+               </font>
+            </Text>
+            <Text fill="#434343" layoutX="522.0" layoutY="373.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Role">
+               <font>
+                  <Font name="Louis George Café" size="20.0" />
+               </font>
+            </Text>
+            <Text fill="#434343" layoutX="722.0" layoutY="373.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Matricule fiscal">
+               <font>
+                  <Font name="Louis George Café" size="20.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

@@ -8,13 +8,32 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+<<<<<<< HEAD
     <jar href="Debo.jar" size="879778" download="eager" />
     <jar href="lib\PDFjet.jar" size="265476" download="eager" />
     <jar href="lib\mysql-connector-java-5.1.23-bin.jar" size="834126" download="eager" />
+=======
+    <jar href="Debo.jar" size="905593" download="eager" />
+    <jar href="lib\NotificationAPI.jar" size="2821" download="eager" />
+    <jar href="Debo.jar" size="901127" download="eager" />
+    <jar href="lib\commons-codec-1.14.jar" size="347669" download="eager" />
+    <jar href="lib\io-7.1.4.jar" size="806130" download="eager" />
+    <jar href="lib\jBCrypt-0.4.1.jar" size="17570" download="eager" />
+    <jar href="lib\javax.mail-1.6.1.jar" size="654100" download="eager" />
+    <jar href="lib\kernel-7.1.4.jar" size="1150232" download="eager" />
+    <jar href="lib\layout-7.1.4.jar" size="435612" download="eager" />
+    <jar href="lib\mysql-connector-java-5.1.23-bin.jar" size="834126" download="eager" />
+    <jar href="lib\slf4j-api-1.7.9.jar" size="32121" download="eager" />
+    <jar href="lib\xchart-3.5.2.jar" size="265461" download="eager" />
+>>>>>>> b55a8d67645426ee770db7ef4dd0657b7e679797
   </resources>
   <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="Debo" >
     <param name="requiredFXVersion" value="8.0+"/>
   </applet-desc>
+<<<<<<< HEAD
   <jfx:javafx-desc  width="800" height="600" main-class="livraison.module.LivraisonMain"  name="Debo" />
+=======
+  <jfx:javafx-desc  width="800" height="600" main-class="user.module.UserMain"  name="Debo" />
+>>>>>>> b55a8d67645426ee770db7ef4dd0657b7e679797
   <update check="always"/>
 </jnlp>

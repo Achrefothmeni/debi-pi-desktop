@@ -5,10 +5,7 @@
  */
 package livraison.module;
 
-import com.pdfjet.A4;
-import com.pdfjet.Letter;
-import com.pdfjet.PDF;
-import com.pdfjet.Page;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;

@@ -55,7 +55,7 @@ public class AjouterLivraisonController implements Initializable {
         Livraison livraison = new Livraison();
         livraison.setDateDepart(dep);
         User liv = userdao.findOne(liv_id.getSelectionModel().getSelectedItem().toString());
-        livraison.setLivreurdId(liv.getId());
+        //livraison.setLivreurdId(liv.getId());
         livraison.setStatut("En attente");
         livraison.setFlotte("123TUN4352");
         LivraisonDAO livraisonDAO = new LivraisonDAO();     

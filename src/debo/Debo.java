@@ -5,9 +5,7 @@
  */
 package debo;
 
-import com.pdfjet.A4;
-import com.pdfjet.PDF;
-import com.pdfjet.Page;
+
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -20,70 +18,48 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import javax.imageio.stream.FileCacheImageOutputStream;
 
+import java.sql.Connection;
+import java.sql.Date;
+import javafx.application.Application;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.layout.StackPane;
+import javafx.stage.Stage;
+import user.module.UserDAO;
+import user.module.User;
+
+
 /**
  *
  * @author dell
  */
+
 public class Debo extends Application {   
    
     
     @Override
     public void start(Stage primaryStage) throws IOException {
-        
      
+        Parent root = FXMLLoader.load(getClass().getResource("/user/module/login.fxml"));   
         
-      /* Button btn = new Button();
-        btn.setText("Say 'Hello World'");
-        btn.setOnAction(new EventHandler<ActionEvent>() {
-            
-            @Override
-            public void handle(ActionEvent event) {
-                Connection connection = DBConnection.getInstance().getConnexion();
-                System.out.println("Hello World!");
-                User user = new User("testjava", "testjava", "tt@e.e", "tt@e.e", "azaz", "a:1:{i:0;s:16:"+'"'+"ROLE_SUPER_ADMIN"+'"'+";}", "az", "az", "Disponible", "sdsd", 123323);
-                UserDAO userDAO = new UserDAO();
-                userDAO.save(user);
-                
-                
-                java.util.Date today = new java.util.Date();
-                java.sql.Date sqlToday = new java.sql.Date(today.getTime());
-                Livraison livraison = new Livraison(sqlToday, 60, "123TUN4344");
-                //Livraison livraison2 = new Livraison("En attente", sqlToday, 66, "123TUN4359");
-                LivraisonDAO livraisonDAO = new LivraisonDAO();
-                livraisonDAO.save(livraison);
-                //livraisonDAO.save(livraison2);
-                livraison.setId(78);
-                livraison.setFlotte("123TUN4352");
-                livraisonDAO.update(livraison);
-                
-                ArrayList<Livraison> livraisons = livraisonDAO.findAll();
-                System.out.println(livraisons);
-                
-                Livraison L2 = livraisonDAO.findOne(40);
-                System.out.println(L2);
-                
-            }
-            });
-               */ }
-       
+        Scene scene = new Scene(root);
+        
+        //primaryStage.setTitle("Hello World!");
+        primaryStage.setScene(scene);
+        primaryStage.show();
+    }
+
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        /*throws FileNotFoundException, Exception {
-        // create a file output stream to save the pdf
-        FileOutputStream fos = new FileOutputStream("livraisonfile.pdf");
-        // create the pdf 
-        PDF pdf = new PDF(fos);
-        // create a page in the pdf
-        Page page = new Page(pdf, A4.PORTRAIT);
-        //close the pdf and output stream
-        pdf.close();
-        fos.close();
-        //let's get the location of the file
-        Path file = Paths.get("livraisonfile.pdf");        
-        System.out.println("PDF file was saved to: " + file.toAbsolutePath().toString());
-    }*/
-    }
-}
        
+     
+        launch(args);
+    }
+    
+}
