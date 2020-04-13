@@ -124,7 +124,7 @@ public class AddUserController implements Initializable {
         role.getItems().addAll("Magasinier", "Livreur", "Client", "Fournisseur");
         usernameText.setText(Authentication.authenticatedUser.getUsername());
         //role.getItems().add("Magasinier");
-        //comboBox.getSelectionModel().select("Option B");
+       // comboBox.getSelectionModel().select("Option B");
     }    
 
     @FXML

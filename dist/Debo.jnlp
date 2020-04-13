@@ -8,9 +8,11 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="Debo.jar" size="879217" download="eager" />
+    <jar href="Debo.jar" size="905593" download="eager" />
+    <jar href="lib\NotificationAPI.jar" size="2821" download="eager" />
     <jar href="lib\commons-codec-1.14.jar" size="347669" download="eager" />
     <jar href="lib\jBCrypt-0.4.1.jar" size="17570" download="eager" />
+    <jar href="lib\javax.mail-1.6.1.jar" size="654100" download="eager" />
     <jar href="lib\mysql-connector-java-5.1.23-bin.jar" size="834126" download="eager" />
   </resources>
   <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="Debo" >
