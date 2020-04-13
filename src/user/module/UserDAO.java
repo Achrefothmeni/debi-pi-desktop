@@ -81,6 +81,7 @@ public class UserDAO {
                 user.setNumTel(rs.getInt("numero_tel"));
                 user.setRoles(rs.getString("roles"));
                 user.setPassword(rs.getString("password"));
+                user.setId(rs.getInt("id"));
             }
         } catch (SQLException ex) {
             System.err.println(ex.getMessage());
@@ -105,6 +106,7 @@ public class UserDAO {
                 user.setStatus(rs.getString("status_livreur"));
                 user.setNumTel(rs.getInt("numero_tel"));
                 user.setRoles(rs.getString("roles"));
+                user.setId(rs.getInt("id"));
                 users.add(user);
             }
         } catch (SQLException ex) {

@@ -11,6 +11,7 @@ package user.module;
  */
 public class User {
     
+    protected int id;
     protected String username;
     protected String usernameCanonical;
     protected String email;
@@ -23,6 +24,16 @@ public class User {
     private String status;
     private String matFiscal;
     private int numTel;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+    
+    
     
     public User(){}
 
